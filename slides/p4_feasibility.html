@@ -24,14 +24,9 @@
             line-height: 1.1;
             margin-bottom: 10px;
         }
-        .subtitle {
-            font-size: 32px;
-            color: #6366F1;
-            font-weight: 400;
-        }
         .main-grid {
             display: flex;
-            padding-top: 30px; /* reduced from 50 -> saved 20px */
+            padding-top: 30px;
             padding-left: 80px;
             padding-right: 80px;
         }
@@ -40,8 +35,8 @@
         }
         .roi-card {
             border: 4px solid #0F172A;
-            padding: 18px; /* reduced from 30 -> saved 12px per card */
-            margin-bottom: 18px; /* reduced from 30 -> saved 12px */
+            padding: 18px;
+            margin-bottom: 18px;
             background: #FFFFFF;
             box-shadow: 12px 12px 0px #6366F1;
         }
@@ -69,8 +64,8 @@
         .tech-panel {
             background: #F1F5F9;
             border: 3px solid #0F172A;
-            padding: 12px; /* reduced from 20 -> saved 8px per panel */
-            margin-bottom: 12px; /* reduced from 15 -> saved 3px per gap */
+            padding: 12px;
+            margin-bottom: 12px;
             position: relative;
         }
         .tech-panel-title {
@@ -84,7 +79,7 @@
             color: #475569;
         }
         .pricing-table {
-            margin-top: 20px; /* reduced from 40 -> saved 20px */
+            margin-top: 20px;
             width: 100%;
             border-collapse: collapse;
             border: 4px solid #0F172A;
@@ -92,22 +87,27 @@
         .pricing-table th {
             background: #0F172A;
             color: white;
-            padding: 15px;
+            padding: 10px;
             font-weight: 900;
             text-align: center;
+            font-size: 14px;
         }
         .pricing-table td {
-            padding: 15px;
+            padding: 10px;
             text-align: center;
             border: 2px solid #0F172A;
             font-weight: 900;
-            font-size: 18px;
+            font-size: 16px;
         }
-        .pricing-footer {
-            margin-top: 12px; /* slightly reduced from 15 */
-            font-size: 14px;
-            color: #6366F1;
+        .table-header {
+            background: #6366F1;
+            color: white;
             font-weight: 900;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            border: 2px solid #0F172A;
+            border-bottom: none;
         }
     </style>
 </head>
@@ -115,7 +115,6 @@
     <div class="slide-container">
         <div class="header">
             <h1 class="title">商業與執行可行性</h1>
-            <p class="subtitle">做得到嗎？值得嗎？</p>
         </div>
 
         <div class="main-grid">
@@ -128,7 +127,7 @@
                     <div class="roi-label">軟體月租費</div>
                     <div class="roi-value green">$2,500</div>
                 </div>
-                <div class="pricing-footer">
+                <div style="font-size: 14px; color: #6366F1; font-weight: 900;">
                     › 不限工位數・隨時增加・無綁約・可從 1 個工位開始
                 </div>
             </div>
@@ -146,23 +145,50 @@
                     <div class="tech-panel-title">換線無縫切換</div>
                     <p class="tech-panel-text">換新產品時重新示範樣本即可，不需工程師，不需停線。</p>
                 </div>
+                <div class="tech-panel" style="background: #ECFDF5; border-color: #10B981;">
+                    <div class="tech-panel-title" style="color: #10B981;">一天內完成導入</div>
+                    <p class="tech-panel-text">快速安裝與樣本學習，當天即可正式上線辨識。</p>
+                </div>
 
-                <table class="pricing-table">
-                    <thead>
-                        <tr>
-                            <th>1～3 工位</th>
-                            <th>4～6 工位</th>
-                            <th>7 工位以上</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>NT$ 1,500 / 月</td>
-                            <td>NT$ 2,500 / 月</td>
-                            <td>NT$ 3,500+ / 月</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div style="margin-top: 10px;">
+                    <div class="table-header">軟體月租（分層定價）</div>
+                    <table class="pricing-table" style="margin-top: 0;">
+                        <thead>
+                            <tr>
+                                <th>1～3 工位</th>
+                                <th>4～6 工位</th>
+                                <th>7 工位以上</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NT$ 1,500 / 月</td>
+                                <td>NT$ 2,500 / 月</td>
+                                <td>NT$ 3,500+ / 月</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <div class="table-header" style="background: #0F172A;">硬體買斷</div>
+                    <table class="pricing-table" style="margin-top: 0;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%;">邊緣運算主機</td>
+                                <td style="width: 50%;">NT$ 4,000 / 台</td>
+                            </tr>
+                            <tr>
+                                <td>方案 A 鏡頭組</td>
+                                <td>NT$ 600 / 個</td>
+                            </tr>
+                            <tr>
+                                <td>方案 B 鏡頭組</td>
+                                <td>NT$ 800 / 個</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

@@ -24,32 +24,28 @@
             line-height: 1.1;
             margin-bottom: 10px;
         }
-        .subtitle {
-            font-size: 32px;
-            color: #6366F1;
-            font-weight: 400;
-        }
         .process-flow {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 80px;
+            margin-top: 100px;
             padding: 0 40px;
         }
         .process-step {
             background: #F1F5F9;
             padding: 20px;
-            margin: 0 -5px;
+            margin: 0 10px;
             border: 2px solid #0F172A;
             font-weight: 900;
             text-align: center;
-            width: 110px;
-            height: 80px;
+            width: 200px;
+            height: 100px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             position: relative;
             z-index: 1;
+            font-size: 24px;
         }
         .process-step.active {
             background: #10B981;
@@ -66,19 +62,18 @@
             background: #EF4444;
             color: white;
             padding: 5px 15px;
-            font-size: 14px;
+            font-size: 16px;
             white-space: nowrap;
             font-weight: 900;
         }
         .arrow {
-            font-size: 20px;
+            font-size: 24px;
             color: #0F172A;
-            margin: 0 5px;
         }
         .cards-container {
             display: flex;
             justify-content: space-between;
-            padding: 80px 80px 0 80px;
+            padding: 100px 80px 0 80px;
         }
         .card {
             width: 30%;
@@ -104,45 +99,27 @@
             line-height: 1.6;
             color: #475569;
         }
-        .footer {
-            position: absolute;
-            bottom: 40px;
-            right: 80px;
-            font-size: 14px;
-            color: #94A3B8;
-        }
     </style>
 </head>
 <body>
     <div class="slide-container">
         <div class="header">
-            <h1 class="title">痛點場景：換線頻繁的挑戰</h1>
-            <p class="subtitle">每次換線，品質就歸零？</p>
+            <h1 class="title">換線頻繁的工廠，每次換線品質就歸零</h1>
         </div>
 
         <div class="process-flow">
-            <div class="process-step">來料</div>
+            <div class="process-step">來料檢驗</div>
             <i class="fas fa-chevron-right arrow"></i>
-            <div class="process-step">檢驗</div>
-            <i class="fas fa-chevron-right arrow"></i>
-            <div class="process-step">備料</div>
-            <i class="fas fa-chevron-right arrow"></i>
-            <div class="process-step">備件</div>
+            <div class="process-step">備料備件</div>
             <i class="fas fa-chevron-right arrow"></i>
             <div class="process-step active">
                 <div class="warning-label">⚠ 異常發生於此</div>
-                組裝
+                組裝作業
             </div>
             <i class="fas fa-chevron-right arrow"></i>
-            <div class="process-step active">作業</div>
+            <div class="process-step">抽檢發現</div>
             <i class="fas fa-chevron-right arrow"></i>
-            <div class="process-step">抽檢</div>
-            <i class="fas fa-chevron-right arrow"></i>
-            <div class="process-step">發現</div>
-            <i class="fas fa-chevron-right arrow"></i>
-            <div class="process-step">重工</div>
-            <i class="fas fa-chevron-right arrow"></i>
-            <div class="process-step" style="background:#FEE2E2; color:#EF4444;">損失</div>
+            <div class="process-step" style="background:#FEE2E2; color:#EF4444;">重工損失</div>
         </div>
 
         <div class="cards-container">
@@ -158,10 +135,6 @@
                 <div class="card-title"><i class="fas fa-chart-line"></i> 無法改善</div>
                 <p class="card-text">缺乏數據支撐，相同錯誤反覆出現，管理者只能靠師傅經驗猜測。</p>
             </div>
-        </div>
-
-        <div class="footer">
-            來源：電子零組件代工廠實地觀察 × 台灣中小型製造業現況
         </div>
     </div>
 </body>

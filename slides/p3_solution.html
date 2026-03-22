@@ -24,11 +24,6 @@
             line-height: 1.1;
             margin-bottom: 10px;
         }
-        .subtitle {
-            font-size: 32px;
-            color: #6366F1;
-            font-weight: 400;
-        }
         .content-grid {
             display: flex;
             padding-top: 50px;
@@ -49,10 +44,11 @@
         }
         .arch-layer-num {
             font-weight: 900;
-            font-size: 24px;
+            font-size: 18px;
             color: #6366F1;
             margin-right: 20px;
-            width: 40px;
+            width: 60px;
+            white-space: nowrap;
         }
         .arch-layer-content {
             font-weight: 900;
@@ -105,63 +101,74 @@
             color: #475569;
             line-height: 1.5;
         }
-        .pricing-section {
+        .product-visuals {
             margin-top: 40px;
             display: flex;
             justify-content: space-between;
-            background: #0F172A;
-            padding: 25px;
-            color: white;
+        }
+        .visual-card {
+            width: 48%;
+            border: 3px solid #0F172A;
+            background: #F8FAFC;
+            padding: 20px;
+            text-align: center;
             box-shadow: 12px 12px 0px #6366F1;
         }
-        .price-item {
-            text-align: center;
-            width: 30%;
-        }
-        .price-label {
-            font-size: 14px;
-            color: #94A3B8;
-            margin-bottom: 5px;
-        }
-        .price-value {
+        .visual-title {
             font-weight: 900;
-            font-size: 22px;
-            color: #10B981;
+            font-size: 20px;
+            color: #0F172A;
+            margin-bottom: 15px;
+        }
+        .visual-placeholder {
+            width: 100%;
+            height: 120px;
+            background: #E2E8F0;
+            border: 2px dashed #94A3B8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748B;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        .visual-desc {
+            font-size: 14px;
+            color: #475569;
         }
     </style>
 </head>
 <body>
     <div class="slide-container">
         <div class="header">
-            <h1 class="title">產品解法與架構</h1>
-            <p class="subtitle">一套會看的眼睛，裝在每個工位上</p>
+            <h1 class="title">一套會看的眼睛，裝在每個工位上</h1>
         </div>
 
         <div class="content-grid">
             <div class="architecture-section">
                 <div class="arch-layer">
-                    <div class="arch-layer-num">L1</div>
+                    <div class="arch-layer-num">第一層</div>
                     <div class="arch-layer-content">
                         鏡頭（每工位）
                         <span class="arch-layer-detail">俯視工件・串流錄影</span>
                     </div>
                 </div>
                 <div class="arch-layer">
-                    <div class="arch-layer-num">L2</div>
+                    <div class="arch-layer-num">第二層</div>
                     <div class="arch-layer-content">
                         邊緣運算主機
                         <span class="arch-layer-detail">Jetson Nano・AI 即時辨識</span>
                     </div>
                 </div>
                 <div class="arch-layer">
-                    <div class="arch-layer-num">L3</div>
+                    <div class="arch-layer-num">第三層</div>
                     <div class="arch-layer-content">
                         雲端服務
                         <span class="arch-layer-detail">儲存結果・月租 SaaS</span>
                     </div>
                 </div>
                 <div class="arch-layer">
-                    <div class="arch-layer-num">L4</div>
+                    <div class="arch-layer-num">第四層</div>
                     <div class="arch-layer-content">
                         Dashboard
                         <span class="arch-layer-detail">品保即時監看</span>
@@ -189,18 +196,20 @@
                     </div>
                 </div>
 
-                <div class="pricing-section">
-                    <div class="price-item">
-                        <div class="price-label">方案 A｜基本版</div>
-                        <div class="price-value">NT$ 600 / 個</div>
+                <div class="product-visuals">
+                    <div class="visual-card">
+                        <div class="visual-title">方案 A：基本版</div>
+                        <div class="visual-placeholder">
+                            <i class="fas fa-camera fa-3x"></i>
+                        </div>
+                        <p class="visual-desc">標準鏡頭組・無提示燈</p>
                     </div>
-                    <div class="price-item">
-                        <div class="price-label">方案 B｜進階版</div>
-                        <div class="price-value">NT$ 800 / 個</div>
-                    </div>
-                    <div class="price-item">
-                        <div class="price-label">邊緣運算主機</div>
-                        <div class="price-value">NT$ 4,000 / 台</div>
+                    <div class="visual-card">
+                        <div class="visual-title">方案 B：進階版</div>
+                        <div class="visual-placeholder" style="border-color: #10B981; color: #10B981;">
+                            <i class="fas fa-lightbulb fa-3x"></i>
+                        </div>
+                        <p class="visual-desc">智慧鏡頭組・含 LED 提示燈</p>
                     </div>
                 </div>
             </div>

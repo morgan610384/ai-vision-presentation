@@ -24,41 +24,26 @@
             line-height: 1.1;
             margin-bottom: 10px;
         }
-        .subtitle {
-            font-size: 32px;
-            color: #6366F1;
-            font-weight: 400;
-        }
-        /* Reduced vertical padding to fit within 720px */
         .timeline-container {
             display: flex;
             justify-content: space-between;
-            padding-top: 30px; /* reduced from 60 */
+            padding-top: 30px;
             padding-left: 80px;
             padding-right: 80px;
         }
         .timeline-item {
             width: 31%;
             border: 4px solid #0F172A;
-            padding: 12px; /* reduced from 25 */
+            padding: 15px;
             background: #F8FAFC;
             position: relative;
-        }
-        .timeline-item::before {
-            content: "";
-            position: absolute;
-            top: -10px; /* reduced */
-            left: -10px; /* reduced */
-            width: 100%;
-            height: 100%;
-            border: 4px solid #6366F1;
-            z-index: -1;
+            box-shadow: 10px 10px 0px #6366F1;
         }
         .month-tag {
             background: #0F172A;
             color: white;
             display: inline-block;
-            padding: 4px 12px; /* slightly reduced */
+            padding: 4px 12px;
             font-weight: 900;
             font-size: 20px;
             margin-bottom: 12px;
@@ -73,6 +58,7 @@
             list-style: none;
             font-size: 16px;
             line-height: 1.6;
+            margin-bottom: 15px;
         }
         .item-list li::before {
             content: "▪";
@@ -80,11 +66,22 @@
             margin-right: 10px;
             font-weight: 900;
         }
-        /* Reduced vertical padding for benefits */
+        .action-box {
+            background: #ECFDF5;
+            border: 2px solid #10B981;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .action-title {
+            font-weight: 900;
+            color: #10B981;
+            margin-bottom: 5px;
+            display: block;
+        }
         .benefit-grid {
             display: flex;
             justify-content: space-between;
-            padding-top: 20px; /* reduced from 60 */
+            padding-top: 30px;
             padding-left: 80px;
             padding-right: 80px;
         }
@@ -92,7 +89,7 @@
             width: 23%;
             background: #10B981;
             color: white;
-            padding: 12px; /* reduced from 20 */
+            padding: 15px;
             text-align: center;
             border: 3px solid #0F172A;
             box-shadow: 8px 8px 0px #0F172A;
@@ -107,7 +104,7 @@
             line-height: 1.4;
         }
         .next-step {
-            margin-top: 20px; /* reduced from 50 */
+            margin-top: 30px;
             margin-left: 80px;
             margin-right: 80px;
             background: #6366F1;
@@ -128,8 +125,7 @@
 <body>
     <div class="slide-container">
         <div class="header">
-            <h1 class="title">專案規劃與效益</h1>
-            <p class="subtitle">三階段導入計畫：從 POC 到全廠擴線</p>
+            <h1 class="title">導入計畫與預期效益</h1>
         </div>
 
         <div class="timeline-container">
@@ -141,6 +137,10 @@
                     <li>建立初步 AI 辨識模型</li>
                     <li>驗收：準確率 ≥ 85%</li>
                 </ul>
+                <div class="action-box">
+                    <span class="action-title">客戶行動</span>
+                    提供操作回饋
+                </div>
             </div>
             <div class="timeline-item">
                 <div class="month-tag">M2</div>
@@ -150,6 +150,10 @@
                     <li>優化預警邏輯與數據回饋</li>
                     <li>驗收：重工次數明顯下降</li>
                 </ul>
+                <div class="action-box">
+                    <span class="action-title">客戶行動</span>
+                    確認續約意願
+                </div>
             </div>
             <div class="timeline-item">
                 <div class="month-tag">M3</div>
@@ -159,6 +163,10 @@
                     <li>產出 ROI 量化分析報告</li>
                     <li>驗收：年約簽訂與規模化</li>
                 </ul>
+                <div class="action-box">
+                    <span class="action-title">客戶行動</span>
+                    簽訂年度合約
+                </div>
             </div>
         </div>
 
