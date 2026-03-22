@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            position: relative;
+            color: #475569;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 60px;
+            padding-left: 80px;
+        }
+        .title {
+            font-weight: 900;
+            font-size: 64px;
+            color: #0F172A;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 32px;
+            color: #6366F1;
+            font-weight: 400;
+        }
+        .content-grid {
+            display: flex;
+            padding-top: 50px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .architecture-section {
+            width: 40%;
+        }
+        .arch-layer {
+            background: #F1F5F9;
+            border: 3px solid #0F172A;
+            padding: 15px 25px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 8px 8px 0px #6366F1;
+        }
+        .arch-layer-num {
+            font-weight: 900;
+            font-size: 24px;
+            color: #6366F1;
+            margin-right: 20px;
+            width: 40px;
+        }
+        .arch-layer-content {
+            font-weight: 900;
+            font-size: 18px;
+            color: #0F172A;
+        }
+        .arch-layer-detail {
+            font-weight: 400;
+            font-size: 14px;
+            color: #475569;
+            display: block;
+        }
+        .workflow-section {
+            width: 60%;
+            padding-left: 60px;
+        }
+        .workflow-title {
+            font-weight: 900;
+            font-size: 28px;
+            color: #0F172A;
+            margin-bottom: 25px;
+            border-left: 10px solid #10B981;
+            padding-left: 15px;
+        }
+        .workflow-steps {
+            display: flex;
+            justify-content: space-between;
+        }
+        .step-card {
+            width: 31%;
+            background: #FFFFFF;
+            border: 3px solid #0F172A;
+            padding: 20px;
+            box-shadow: 10px 10px 0px #10B981;
+        }
+        .step-num {
+            font-weight: 900;
+            font-size: 48px;
+            color: #10B981;
+            margin-bottom: 10px;
+        }
+        .step-title {
+            font-weight: 900;
+            font-size: 20px;
+            color: #0F172A;
+            margin-bottom: 10px;
+        }
+        .step-text {
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.5;
+        }
+        .pricing-section {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            background: #0F172A;
+            padding: 25px;
+            color: white;
+            box-shadow: 12px 12px 0px #6366F1;
+        }
+        .price-item {
+            text-align: center;
+            width: 30%;
+        }
+        .price-label {
+            font-size: 14px;
+            color: #94A3B8;
+            margin-bottom: 5px;
+        }
+        .price-value {
+            font-weight: 900;
+            font-size: 22px;
+            color: #10B981;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">產品解法與架構</h1>
+            <p class="subtitle">一套會看的眼睛，裝在每個工位上</p>
+        </div>
+
+        <div class="content-grid">
+            <div class="architecture-section">
+                <div class="arch-layer">
+                    <div class="arch-layer-num">L1</div>
+                    <div class="arch-layer-content">
+                        鏡頭（每工位）
+                        <span class="arch-layer-detail">俯視工件・串流錄影</span>
+                    </div>
+                </div>
+                <div class="arch-layer">
+                    <div class="arch-layer-num">L2</div>
+                    <div class="arch-layer-content">
+                        邊緣運算主機
+                        <span class="arch-layer-detail">Jetson Nano・AI 即時辨識</span>
+                    </div>
+                </div>
+                <div class="arch-layer">
+                    <div class="arch-layer-num">L3</div>
+                    <div class="arch-layer-content">
+                        雲端服務
+                        <span class="arch-layer-detail">儲存結果・月租 SaaS</span>
+                    </div>
+                </div>
+                <div class="arch-layer">
+                    <div class="arch-layer-num">L4</div>
+                    <div class="arch-layer-content">
+                        Dashboard
+                        <span class="arch-layer-detail">品保即時監看</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workflow-section">
+                <h2 class="workflow-title">導入流程：當天即可上線</h2>
+                <div class="workflow-steps">
+                    <div class="step-card">
+                        <div class="step-num">01</div>
+                        <div class="step-title">安裝硬體</div>
+                        <p class="step-text">架設鏡頭，接 Switch 連接主機，約需 2~3 小時。</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">02</div>
+                        <div class="step-title">樣本學習</div>
+                        <p class="step-text">示範 10~20 個正確工件，AI 自動學習，約 30 分鐘。</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">03</div>
+                        <div class="step-title">正式上線</div>
+                        <p class="step-text">即時辨識開始，Dashboard 啟用，不停工、不改流程。</p>
+                    </div>
+                </div>
+
+                <div class="pricing-section">
+                    <div class="price-item">
+                        <div class="price-label">方案 A｜基本版</div>
+                        <div class="price-value">NT$ 600 / 個</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="price-label">方案 B｜進階版</div>
+                        <div class="price-value">NT$ 800 / 個</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="price-label">邊緣運算主機</div>
+                        <div class="price-value">NT$ 4,000 / 台</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

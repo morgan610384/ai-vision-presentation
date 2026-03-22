@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            position: relative;
+            color: #475569;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 60px;
+            padding-left: 80px;
+        }
+        .title {
+            font-weight: 900;
+            font-size: 64px;
+            color: #0F172A;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 32px;
+            color: #6366F1;
+            font-weight: 400;
+        }
+        .main-content {
+            display: flex;
+            padding-top: 60px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .ta-section {
+            width: 35%;
+        }
+        .ta-card {
+            background: #F1F5F9;
+            border: 3px solid #0F172A;
+            padding: 25px;
+            margin-bottom: -15px;
+            position: relative;
+            z-index: 1;
+        }
+        .ta-card:nth-child(2) {
+            margin-left: 30px;
+            background: #E2E8F0;
+            z-index: 2;
+        }
+        .ta-card:nth-child(3) {
+            margin-left: 60px;
+            background: #CBD5E1;
+            z-index: 3;
+        }
+        .ta-card-title {
+            font-weight: 900;
+            font-size: 24px;
+            color: #0F172A;
+            margin-bottom: 5px;
+        }
+        .ta-card-text {
+            font-size: 16px;
+            color: #475569;
+        }
+        .table-section {
+            width: 65%;
+            padding-left: 60px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 4px solid #0F172A;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 2px solid #0F172A;
+            font-size: 16px;
+        }
+        th {
+            background: #6366F1;
+            color: white;
+            font-weight: 900;
+            font-size: 18px;
+        }
+        .highlight-col {
+            background: #ECFDF5;
+            font-weight: 900;
+            color: #10B981;
+        }
+        .row-label {
+            background: #F8FAFC;
+            font-weight: 900;
+            color: #0F172A;
+            text-align: left;
+        }
+        .market-status {
+            margin-top: 30px;
+            padding: 20px;
+            background: #0F172A;
+            color: white;
+            font-weight: 900;
+            font-size: 22px;
+            text-align: center;
+            box-shadow: 10px 10px 0px #10B981;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">TA 與市場分析</h1>
+            <p class="subtitle">被所有人忽略的那群客戶</p>
+        </div>
+
+        <div class="main-content">
+            <div class="ta-section">
+                <div class="ta-card">
+                    <div class="ta-card-title">產品多元</div>
+                    <p class="ta-card-text">換線頻繁・多品項小批量</p>
+                </div>
+                <div class="ta-card">
+                    <div class="ta-card-title">人工為主</div>
+                    <p class="ta-card-text">組裝仰賴作業員・無自動化</p>
+                </div>
+                <div class="ta-card">
+                    <div class="ta-card-title">50 人以下</div>
+                    <p class="ta-card-text">中小型代工廠・毛利薄</p>
+                </div>
+                <div class="market-status">現有方案均無法解決問題</div>
+            </div>
+
+            <div class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>評估項目</th>
+                            <th class="highlight-col">本產品</th>
+                            <th>Cognex / KEYENCE</th>
+                            <th>MES / ERP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="row-label">導入成本</td>
+                            <td class="highlight-col">低（月租制）</td>
+                            <td>高（數十萬起）</td>
+                            <td>高（百萬起）</td>
+                        </tr>
+                        <tr>
+                            <td class="row-label">導入時間</td>
+                            <td class="highlight-col">1 天內</td>
+                            <td>1～3 個月</td>
+                            <td>3～6 個月</td>
+                        </tr>
+                        <tr>
+                            <td class="row-label">換線彈性</td>
+                            <td class="highlight-col">少量樣本重新學習</td>
+                            <td>需工程師設定</td>
+                            <td>需重新設定</td>
+                        </tr>
+                        <tr>
+                            <td class="row-label">適合廠規模</td>
+                            <td class="highlight-col">中小型</td>
+                            <td>中大型</td>
+                            <td>中大型</td>
+                        </tr>
+                        <tr>
+                            <td class="row-label">目標客群</td>
+                            <td class="highlight-col">人工組裝廠</td>
+                            <td>自動化產線</td>
+                            <td>全廠管理</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

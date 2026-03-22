@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "title": "痛點場景：換線頻繁的品質歸零挑戰",
+    "created": 1774166228.1903474,
+    "last_updated": 1774166325.1865041,
+    "total_slides": 5
+  },
+  "slides": [
+    {
+      "id": "p1_pain_points",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "p2_ta_market",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "p3_solution",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "p4_feasibility",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "p5_roadmap",
+      "state": "edited",
+      "pageNum": 5
+    }
+  ],
+  "outline": [
+    {
+      "id": "p1_pain_points",
+      "title": "痛點場景：換線頻繁的品質歸零挑戰",
+      "summary": "分析中小型工廠在頻繁換線下的品質控制難點，並標註異常發生點。",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "p2_ta_market",
+      "title": "TA 與市場：被忽略的隱藏需求",
+      "summary": "定義目標客群並與現有高成本方案進行對比。",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "p3_solution",
+      "title": "產品解法：每個工位的「智慧之眼」",
+      "summary": "展示四層系統架構與三步驟導入流程。",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "p4_feasibility",
+      "title": "商業與執行：高 ROI 的實踐方案",
+      "summary": "量化重工損失與月租成本，並強調技術可行性。",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "p5_roadmap",
+      "title": "專案規劃：三階段導入計畫與效益預期",
+      "summary": "展示三個月的階段性目標與核心導入效益。",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

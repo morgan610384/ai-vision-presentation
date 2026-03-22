@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            position: relative;
+            color: #475569;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 60px;
+            padding-left: 80px;
+        }
+        .title {
+            font-weight: 900;
+            font-size: 64px;
+            color: #0F172A;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 32px;
+            color: #6366F1;
+            font-weight: 400;
+        }
+        .main-grid {
+            display: flex;
+            padding-top: 30px; /* reduced from 50 -> saved 20px */
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .roi-section {
+            width: 45%;
+        }
+        .roi-card {
+            border: 4px solid #0F172A;
+            padding: 18px; /* reduced from 30 -> saved 12px per card */
+            margin-bottom: 18px; /* reduced from 30 -> saved 12px */
+            background: #FFFFFF;
+            box-shadow: 12px 12px 0px #6366F1;
+        }
+        .roi-card.positive {
+            box-shadow: 12px 12px 0px #10B981;
+        }
+        .roi-label {
+            font-weight: 900;
+            font-size: 24px;
+            color: #0F172A;
+            margin-bottom: 10px;
+        }
+        .roi-value {
+            font-weight: 900;
+            font-size: 60px;
+            color: #EF4444;
+        }
+        .roi-value.green {
+            color: #10B981;
+        }
+        .tech-section {
+            width: 55%;
+            padding-left: 60px;
+        }
+        .tech-panel {
+            background: #F1F5F9;
+            border: 3px solid #0F172A;
+            padding: 12px; /* reduced from 20 -> saved 8px per panel */
+            margin-bottom: 12px; /* reduced from 15 -> saved 3px per gap */
+            position: relative;
+        }
+        .tech-panel-title {
+            font-weight: 900;
+            font-size: 22px;
+            color: #0F172A;
+            margin-bottom: 5px;
+        }
+        .tech-panel-text {
+            font-size: 16px;
+            color: #475569;
+        }
+        .pricing-table {
+            margin-top: 20px; /* reduced from 40 -> saved 20px */
+            width: 100%;
+            border-collapse: collapse;
+            border: 4px solid #0F172A;
+        }
+        .pricing-table th {
+            background: #0F172A;
+            color: white;
+            padding: 15px;
+            font-weight: 900;
+            text-align: center;
+        }
+        .pricing-table td {
+            padding: 15px;
+            text-align: center;
+            border: 2px solid #0F172A;
+            font-weight: 900;
+            font-size: 18px;
+        }
+        .pricing-footer {
+            margin-top: 12px; /* slightly reduced from 15 */
+            font-size: 14px;
+            color: #6366F1;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">商業與執行可行性</h1>
+            <p class="subtitle">做得到嗎？值得嗎？</p>
+        </div>
+
+        <div class="main-grid">
+            <div class="roi-section">
+                <div class="roi-card">
+                    <div class="roi-label">每月重工損失</div>
+                    <div class="roi-value">$30,000+</div>
+                </div>
+                <div class="roi-card positive">
+                    <div class="roi-label">軟體月租費</div>
+                    <div class="roi-value green">$2,500</div>
+                </div>
+                <div class="pricing-footer">
+                    › 不限工位數・隨時增加・無綁約・可從 1 個工位開始
+                </div>
+            </div>
+
+            <div class="tech-section">
+                <div class="tech-panel">
+                    <div class="tech-panel-title">邊緣運算 (Jetson Nano)</div>
+                    <p class="tech-panel-text">本地即時辨識，不依賴網路穩定性，延遲約 0.5～1 秒。</p>
+                </div>
+                <div class="tech-panel">
+                    <div class="tech-panel-title">少量樣本學習</div>
+                    <p class="tech-panel-text">10～20 個正確工件示範，AI 自動建立判斷標準，約 30 分鐘。</p>
+                </div>
+                <div class="tech-panel">
+                    <div class="tech-panel-title">換線無縫切換</div>
+                    <p class="tech-panel-text">換新產品時重新示範樣本即可，不需工程師，不需停線。</p>
+                </div>
+
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>1～3 工位</th>
+                            <th>4～6 工位</th>
+                            <th>7 工位以上</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NT$ 1,500 / 月</td>
+                            <td>NT$ 2,500 / 月</td>
+                            <td>NT$ 3,500+ / 月</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
